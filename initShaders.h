@@ -31,7 +31,7 @@ GLuint initShaders(ShaderInfo* shaders){
   
   ShaderInfo* shade=shaders;
   
-  vector<GLuint> shadeList;//initialize list of shaders
+  vector<GLuint> shadeList;
   
   while(shade->type != GL_NONE){//loop through all the shaders in the list
     shadeList.push_back(createShader(shade->type,read(shade->file)));//adding shaders into the list
